@@ -1,10 +1,18 @@
+
 # Akıllı Öğretmen Asistanı
 
 ## Proje Fikri
 
 Bu proje, öğretmenlerin öğrenci kompozisyonlarını daha hızlı, tutarlı ve veriye dayalı biçimde değerlendirebilmesi için geliştirilmiş bir masaüstü yardımcı aracıdır.
 
+
 Kullanıcı herhangi bir uygulamada öğrenci metnini seçer, `F8` tuşuna basar ve açılan menüden değerlendirme işlemini seçer. Uygulama seçili metni Ollama üzerinden Gemini 3 Flash Preview modeline gönderir, öğretmen odaklı analiz üretir ve bazı sonuçları grafiklerle görselleştirir.
+
+
+
+<img width="287" height="185" alt="Ekran Resmi 2026-04-28 16 42 38" src="https://github.com/user-attachments/assets/804a1d1a-6f78-456b-8bc2-ffa891d1f470" />
+
+
 
 ## Hedef Meslek Grubu
 
