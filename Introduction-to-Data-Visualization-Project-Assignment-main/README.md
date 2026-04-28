@@ -25,6 +25,7 @@ Proje, öğrenci yazısını metinsel veri olarak ele alır ve iki farklı veri 
    - Yaratıcılık
    - Kelime çeşitliliği
 
+
 2. Yerel metin istatistikleri
    - Kelime sayısı
    - Cümle sayısı
@@ -140,3 +141,42 @@ Model sırası:
 ## Proje Sunum Cümlesi
 
 Bu projede öğretmenlerin öğrenci kompozisyonlarını değerlendirme sürecini destekleyen AI tabanlı bir veri görselleştirme aracı geliştirilmiştir. Uygulama seçili öğrenci metnini rubrik kriterlerine göre değerlendirir, metinden ölçülebilir istatistikler çıkarır ve bu sonuçları grafiklerle sunar.
+
+
+```mermaid
+flowchart TD
+    A["Öğrenci metni seçilir"] --> B["F8 tuşuna basılır"]
+    B --> C["Akıllı Öğretmen Asistanı menüsü açılır"]
+
+    C --> D["Tam Öğretmen Raporu"]
+    C --> E["Metin İstatistikleri + Grafik"]
+    C --> F["Rubrik Puanı + Grafik"]
+    C --> G["Yazım ve Noktalama Hataları"]
+    C --> H["Öğrenciye Geri Bildirim"]
+    C --> I["Geliştirilmiş Örnek Metin"]
+
+    D --> J["Gemini 3 Flash Preview"]
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+
+    J --> K["AI değerlendirme sonucu üretilir"]
+
+    E --> L["Yerel metin analizi"]
+    L --> M["Kelime sayısı"]
+    L --> N["Cümle sayısı"]
+    L --> O["Kelime çeşitliliği"]
+    L --> P["En sık kullanılan kelimeler"]
+
+    K --> Q["Sonuç penceresi"]
+    M --> R["Veri grafikleri"]
+    N --> R
+    O --> R
+    P --> R
+    R --> Q
+
+    Q --> S["Panoya Kopyala"]
+    Q --> T["Kapat"]
+
+```
